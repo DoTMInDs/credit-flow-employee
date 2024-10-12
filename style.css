@@ -13,7 +13,7 @@
     --font-size-big: 25px; 
     --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root{
         --background-color: #000000;
         --font-color-main: #fffbfb;
@@ -28,7 +28,7 @@
         --font-size-bold: 14px; 
         --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
     }
-} */
+}
 
 *{
     margin: 0;
@@ -171,6 +171,23 @@ h1,h2,h3,h4,h5{
 /* -----------------------------------------------------
                         nav-section
 --------------------------------------------------------*/
+.FAQ_wrapper{
+    padding: 20px;
+}
+.left_side{
+    display: flex;
+    align-items: center;
+}
+.links .faq_dasboard{
+    list-style: none;
+    display: flex;
+}
+.links .faq_dasboard li{
+    margin: 0 20px;
+}
+.links .faq_dasboard li a{
+    text-decoration: none;
+}
 .logo svg{
     color: var(--font-color-main);
 }
@@ -309,4 +326,51 @@ h1,h2,h3,h4,h5{
 }
 .done_btn{
     font-size: var(--font-size-small);
+}
+
+/* --------------------------------------------------------------
+                        Settings-section
+----------------------------------------------------------------- */
+.user{
+    font-size: 100px;
+}
+.user_name{
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--font-color-main);
+}
+.hrss{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-weight: bold;
+}
+.email{
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--font-color-main);
+}
+.FBHO18372{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-weight: bold;
+}
+.email_notify{
+    font-size: var(--font-size-big);
+    font-weight: bold;
+}
+.update_notify_btn{
+    background: var(--font-color-main);
+    color: var(--button-font-color);
+    font-size: var(--font-size-bold);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* --------------------------------------------------------------
+                        Loan-Calculator
+----------------------------------------------------------------- */
+.form_loan{
+    width: 500px;
 }
