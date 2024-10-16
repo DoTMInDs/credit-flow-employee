@@ -75,6 +75,30 @@
                     </div>
                 </div>
                 <div class="right_side flex items-center gap-[20px]">
+                    <div class="">
+                        <div class="dropdown dropdown-center">
+                            <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <div class="flex gap-[10rem] justify-between p-[20px] whitespace-nowrap">
+                                    <h2 class="notification font-[Inter]">Notification</h2>
+                                    <a href="" class="text-blue-500 font-medium text-[12px]">View All</a>
+                              </div>
+                              <li><hr class="dropdown-divider"></li>
+                              <div class="flex items-center gap-[20px] p-[20px]">
+                                    <div class="bg-[#FFF5D9]  rounded-[50%] p-[1.5rem]">
+                                        <i class="fa-regular fa-credit-card icon text-[#FFBB38] fa-lg"></i>
+                                    </div>
+                                    <div class="">
+                                        <h2 class="font-bold text-[14px]">Approval needed</h2>
+                                        <p class="text-[#CBD5E1] pt-[5px] text-[12px]">Loan Application lorem...</p>
+                                        <small class="text-[#CBD5E1] text-[10px]">28 January 2021</small>
+                                    </div>
+                              </div>
+                            </ul>
+                          </div>
+                    </div>
                     <div class="accounts">
                         <h2 class="accounts_h2">Julliet Ibrahim: #FBHO18372</h2>
                     </div>
@@ -145,50 +169,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="table-section flex justify-center items-center">
-                    <table class="table-auto md:table-fixed">
+                <div class="overflow-auto">
+                    <table class="w-full">
                         <thead>
                             <tr class=" border-b">
-                                <th class="pr-[6rem] py-[1rem]">Transaction Date</th>
-                                <th class="pr-[6rem]">Application Number</th>
-                                <th class="pr-[6rem]">Loan Type</th>
-                                <th class="pr-[6rem]">Amount (GHS)</th>
-                                <th class="pr-[6rem]">Status</th>
-                                <th class="pr-[6rem]">Actions</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Transaction Date</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Application Number</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Loan Type</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Amount (GHS)</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Status</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b">
-                                <td class="py-[1rem]">07-SEP-2024 22:00 </td>
-                                <td class="">FBLSTL-1007263892</td>
-                                <td class="">Auto Loan</td>
-                                <td class="">91,000</td>
-                                <td class=""><small class="bg-yellow-100 p-[0.5rem] text-[#333]">Awaiting Info</small></td>
-                                <td class="text-blue-500 underline"><a href="">View More</a></td>
+                                <td class="whitespace-nowrap p-3 ">07-SEP-2024 22:00 </td>
+                                <td class="whitespace-nowrap p-3 ">FBLSTL-1007263892</td>
+                                <td class="whitespace-nowrap p-3 ">Auto Loan</td>
+                                <td class="whitespace-nowrap p-3 ">91,000</td>
+                                <td class="whitespace-nowrap p-3 "><small class="bg-yellow-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">Awaiting Info</small></td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline"><a href="application_detail_awaiting.html">View More</a></td>
                             </tr>
                             <tr class="border-b">
-                                <td class="py-[1rem]">08-AUG-2024 15:00  </td>
-                                <td>FBLSTL-3141592653</td>
-                                <td>Capital Loan</td>
-                                <td>51,000</td>
-                                <td><small class="bg-green-100 p-[0.5rem] text-[#333]">Approved</small></td>
-                                <td class="text-blue-500 underline"><a href="">View More</a></td>
+                                <td class="whitespace-nowrap p-3">08-AUG-2024 15:00  </td>
+                                <td class="whitespace-nowrap p-3">FBLSTL-3141592653</td>
+                                <td class="whitespace-nowrap p-3">Capital Loan</td>
+                                <td class="whitespace-nowrap p-3">51,000</td>
+                                <td class="whitespace-nowrap p-3 "><small class="bg-green-100 tracking-wider font-medium p-[0.5rem] text-[#333]">Approved</small></td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline"><a href="application_detail_pending.html">View More</a></td>
                             </tr>
                             <tr class="border-b">
-                                <td class="py-[1rem]">09-JUL-2024 10:00  </td>
-                                <td>FBLSTL-2718281828</td>
-                                <td>Personal Loan</td>
-                                <td>120,000</td>
-                                <td><small class="bg-red-100 p-[0.5rem] text-[#333]">Closed</small></td>
-                                <td class="text-blue-500 underline"><a href="">View More</a></td>
+                                <td class="whitespace-nowrap p-3">09-JUL-2024 10:00  </td>
+                                <td class="whitespace-nowrap p-3">FBLSTL-2718281828</td>
+                                <td class="whitespace-nowrap p-3">Personal Loan</td>
+                                <td class="whitespace-nowrap p-3">120,000</td>
+                                <td class="whitespace-nowrap p-3 "><small class="bg-red-100 p-[0.5rem] tracking-wider font-medium text-[#333]">Closed</small></td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline"><a href="">View More</a></td>
                             </tr>
                             <tr class="">
-                                <td class="py-[1rem]">05-MAY-2024 12:30  </td>
-                                <td>FBLSTL-1618033987</td>
-                                <td>Capital Loan</td>
-                                <td>55,000</td>
-                                <td><small class="bg-red-100 p-[0.5rem] text-[#333]">Rejected</small></td>
-                                <td class="text-blue-500 underline"><a href="">View More</a></td>
+                                <td class="whitespace-nowrap p-3">05-MAY-2024 12:30  </td>
+                                <td class="whitespace-nowrap p-3">FBLSTL-1618033987</td>
+                                <td class="whitespace-nowrap p-3">Capital Loan</td>
+                                <td class="whitespace-nowrap p-3">55,000</td>
+                                <td class="whitespace-nowrap p-3"><small class="bg-red-100 tracking-wider p-[0.5rem] font-medium text-[#333]">Rejected</small></td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline"><a href="application_detail_rejected.html">View More</a></td>
                             </tr>
                         </tbody>                            
                     </table>

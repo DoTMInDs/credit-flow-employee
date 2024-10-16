@@ -6,11 +6,11 @@
     <title>Credit flow</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" >
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- fontawesome-icons -->
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
@@ -89,7 +89,7 @@
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="index.html">Logout</a></li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,41 +115,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center px-[10px] py-[25px]">
-                    <div class="d-flex gap-[15px] w-full h-[100%]">
-                        <div class="setting_icon">
+                <div class="navbar px-[10px] py-[25px]">
+                    <div class="navbar-menu w-full h-[100%]">
+                        <div class="setting_icon navbar-item">
                             <a href="settings.html"><i class="fa-solid fa-gear icon_gear"></i></a>
                         </div>
-                        <div class="">
-                            <hr class="w-[1px] h-[100%] hr_bg">
+                        <div class="navbar-item">
+                            <hr class=" hr_bg">
                         </div>
-                        <div class="search_inputs d-flex align-items-center gap-[10px]">
+                        <div class="search_inputs  navbar-item">
                             <i class="fa-solid fa-magnifying-glass search_glass"></i>
                             <input type="search" name="search" id="search" placeholder="Search" class="search_input ">
                         </div>
                     </div>
-                    <div class="d-flex align-items-center  gap-[20px]">
-                        <div class="no_list d-flex gap-[20px] align-items-center">
-                            <p class="text-nowrap p_no_list">1 - 10 of 52</p>
-                            <a href=""><i class="fa-solid fa-chevron-left icons"></i></a>
-                            <a href=""><i class="fa-solid fa-chevron-right icons"></i></a>
+                    <div class=" navbar-end">
+                        <div class="no_list  navbar-item">
+                            <a href="#!" class="navbar-item pagination_link">1 - 10 of 52</a>
+                            <a href=""><i class="fa-solid fa-chevron-left icons "></i></a>
+                            <a href=""><i class="fa-solid fa-chevron-right icons "></i></a>
                         </div>
-                        <div class="">
-                            <hr class="w-[1px] h-[100%] hr_bg">
+                        <div class="navbar-item">
+                            <hr class=" hr_bg">
                         </div>
-                        <div class="d-flex gap-[20px] align-items-center">
-                            <a href=""><i class="fa-solid fa-filter icons"></i></a>
-                            <a href=""><i class="fa-solid fa-print icons"></i></a>
-                            <a href=""><i class="fa-solid fa-download icons"></i></a>
+                        <div class="navbar-item gap-[20px] ">
+                            <a href=""><i class="fa-solid fa-filter icons mr-3"></i></a>
+                            <a href=""><i class="fa-solid fa-print icons mr-3"></i></a>
+                            <a href=""><i class="fa-solid fa-download icons mr-3"></i></a>
                         </div>
-                        <div class="">
-                            <hr class="w-[1px] h-[100%] hr_bg">
+                        <div class="navbar-item">
+                            <hr class=" hr_bg">
                         </div>
-                        <div class="">
+                        <div class="navbar-item">
                             <a href=""><i class="fa-solid fa-arrows-left-right icons icons_arrow_top"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- accordion -->
                <div class="mt-[2rem]">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">

@@ -202,6 +202,12 @@ h1,h2,h3,h4,h5{
 }
 .accounts_icon i{
     color: var(--font-color-main);
+    
+}
+.accounts_icon{
+    margin-top: -0.5rem;
+    margin-left: 0.5rem;
+    
 }
 
 /* -----------------------------------------------------
@@ -258,6 +264,9 @@ h1,h2,h3,h4,h5{
 }
 .icons_arrow_top{
     transform: rotate(-45deg);
+}
+.pagination_link{
+    text-decoration: none;
 }
 
 /* table-section-in-main */
@@ -373,4 +382,12 @@ h1,h2,h3,h4,h5{
 ----------------------------------------------------------------- */
 .form_loan{
     width: 500px;
+}
+
+/* app_deatil_grid */
+.app_deatil_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    /* grid-gap: 20px; */
+    width: 100%;
 }
