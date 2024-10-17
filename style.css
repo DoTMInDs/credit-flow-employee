@@ -410,6 +410,9 @@ h1,h2,h3,h4,h5{
 .staff_form_width{
     width: 70%;
 }
+.form_input_loan_wrapper{
+    width: 200px;
+}
 
 /* app_deatil_grid */
 .app_deatil_grid{
@@ -518,6 +521,13 @@ h1,h2,h3,h4,h5{
 }
 .loan_details_wrapper{
     flex-wrap: wrap;
+}
+.input_loan_form{
+    flex-direction: column;
+    gap: 10px;
+}
+.form_input_loan_wrapper{
+    width: 100%;
 }
 .staff_text_h3_wrapper{
     display: flex;
