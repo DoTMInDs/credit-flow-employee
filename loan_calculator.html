@@ -89,9 +89,38 @@
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="index.html">Logout</a></li>
                             </ul>
-                          </div>
+                        </div>                        
                     </div>
-                </div>
+
+                    <div class="menubar">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
     </nav>
@@ -107,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-[20px]">
+                <div class="flex gap-[20px] loan_calculator">
                     <div class="form_loan py-[20px]">
                         <form action="" method="post" class="form_loan_wrapper ">
                              <div class="flex justify-between my-[20px]">

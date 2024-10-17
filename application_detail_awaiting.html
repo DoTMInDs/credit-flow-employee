@@ -91,6 +91,34 @@
                             </ul>
                           </div>
                     </div>
+                    <div class="menubar">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,8 +145,8 @@
                         <button class="bg-[#D80000] px-[1.5rem] rounded py-[6px]"><a class="text-[#ffffff]" href="">Withdraw</a></button>
                     </div>
               </div>
-              <div class="card  mt-[1.5rem] w-[80%] bg-slate-100">
-                <div class="p-[20px] flex gap-[5px]">
+              <div class="card  mt-[1.5rem] bg-slate-100 app_history_wrapper">
+                <div class="p-[20px] flex gap-[5px] app_history">
                     <div class="flex gap-[10px]">
                         <div class="">
                             <i class="fa-solid fa-circle-check text-[#00B03C] fa-2xl"></i>
@@ -126,7 +154,7 @@
                         <div class="">
                             <div class="flex gap-[10px] items-center">
                                 <p class="font-medium">Submitted</p>
-                                <hr class="bg-blue-800 w-full h-[2px]">
+                                <div class="w-[200px]"><hr class="bg-blue-800 w-full h-[2px]"></div>
                             </div>                            
                             <h3 class="text-[#666666] text-[12px]">APPLICATION SUBMITTED: 09-SEP-2024 10:00AM</h3>
                         </div>
@@ -138,19 +166,19 @@
                         <div class="">
                             <div class="flex gap-[10px] items-center">
                                 <p class="font-medium">HRSS</p>
-                                <hr class="bg-blue-800 w-full h-[2px]">
+                                <div class="w-[200px]"><hr class="bg-blue-800 w-full h-[2px]"></div>
                             </div>                            
                             <h3 class="text-[#666666] text-[12px]">ASSIGNED TO TEAM MEMBER: 10-SEP-2024 10:00AM</h3>
                         </div>
                     </div>
-                    <div class="flex gap-[10px]">
+                    <div class="flex gap-[10px] ">
                         <div class="">
                             <i class="fa-solid fa-circle-check text-[#8F9FB8] fa-2xl"></i>
                         </div>
                         <div class="">
                             <div class="flex gap-[10px] items-center">
                                 <p class="font-medium">HRBP</p>
-                                <div class="w-[250px]"><hr class="bg-blue-800 w-full h-[2px]"></div>
+                                <div class="w-[200px]"><hr class="bg-blue-800 w-full h-[2px]"></div>
                             </div>                            
                             <h3 class="text-[#666666] text-[12px]">NO STATUS</h3>
                         </div>
@@ -162,7 +190,7 @@
                 <div class="">
                     <p class="font-medium">Application Details</p>
                 </div>
-               <div class="flex  gap-[20px]">
+               <div class="flex  gap-[20px] app_details">
                     <div class="card flex-grow-1 mt-[1.5rem] bg-slate-100">
                         <div class=" flex gap-[2rem] max-w-[600px] justify-between w-[100%] p-[20px]  ">
                             <div class="flex flex-col gap-[1rem]">
@@ -205,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card w-[20%] mt-[1.5rem] p-[20px]">
+                    <div class="card  mt-[1.5rem] p-[20px] app_details_chcklist">
                         <p class="text-[14px] font-medium">Application Checklist</p>
                         <div class="mt-[1rem]">
                             <div class="flex items-center gap-[10px] ">

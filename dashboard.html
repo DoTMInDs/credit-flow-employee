@@ -59,10 +59,10 @@
                         </svg>   
                     </div>
                     <div class="links">
-                        <ul class="flex item-center gap-[30px]">
-                            <li><a href="" class="a_links">Dashboard</a></li>
-                            <li><a href="" class="a_links">Applicant</a></li>
-                            <li>
+                        <ul class="flex item-center gap-[30px] links_ul">
+                            <li class="links_li"><a href="" class="a_links">Dashboard</a></li>
+                            <li class="links_li"><a href="" class="a_links">Applicant</a></li>
+                            <li class="links_li">
                                 <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <a href="" class="a_links">Resources</a>
                                 </button>
@@ -73,6 +73,7 @@
                             </li>
                         </ul>
                     </div>
+                   
                 </div>
                 <div class="right_side flex items-center gap-[20px]">
                     <div class="">
@@ -115,6 +116,34 @@
                             </ul>
                           </div>
                     </div>
+                    <div class="menubar">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +153,7 @@
         <div class="main_section">
             <div class="container">
                 <div class="hero mt-[3rem]">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center hero_application_loan">
                         <div class="">
                             <h1 class="hero_text_h1">My Loan Application</h1>
                             <p class="hero_text_p">Here's a list of all your applications in the application queue!</p>
@@ -134,8 +163,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center px-[10px] py-[25px]">
-                    <div class="flex gap-[15px] w-full h-[100%]">
+                <div class="flex justify-between items-center px-[10px] py-[25px] hero_search_wrapper">
+                    <div class="flex gap-[15px] w-full h-[100%] ">
                         <div class="setting_icon">
                             <a href="settings.html"><i class="fa-solid fa-gear icon_gear"></i></a>
                         </div>
@@ -147,7 +176,7 @@
                             <input type="search" name="search" id="search" placeholder="Search" class="search_input ">
                         </div>
                     </div>
-                    <div class="flex  gap-[20px]">
+                    <div class="flex  gap-[20px] hero_icons_jusitfy ">
                         <div class="no_list flex gap-[20px] items-center">
                             <p class="text-nowrap p_no_list">1 - 10 of 52</p>
                             <a href=""><i class="fa-solid fa-chevron-left icons"></i></a>
