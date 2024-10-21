@@ -2,6 +2,7 @@
     --background-color: #ffffff;
     --font-color-main: #111111;
     --font-color-light: #616161;
+    /* --font-color-light: #999999; */
     --base-color-main: #EB7100;
     --button-color: #00B03C;
     --button-font-color: #FFFFFF;
@@ -13,7 +14,7 @@
     --font-size-big: 25px; 
     --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --background-color: #000000;
         --font-color-main: #fffbfb;
@@ -28,7 +29,7 @@
         --font-size-bold: 14px; 
         --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
     }
-}
+} */
 
 *{
     margin: 0;
@@ -76,10 +77,12 @@ h1,h2,h3,h4,h5{
                     wrapper-container
 -------------------------------------------------------*/
 
-.container{
-    width: 85%;
+.FAQ_container{
+    width: 80%;
     margin: auto;
-    /* background: var(--background-color); */
+}
+.faq_nav_wrapper{
+    border-bottom: 1px solid gray;
 }
 .wrapper{
     display: flex;
@@ -105,7 +108,60 @@ h1,h2,h3,h4,h5{
     background-color: var(--background-color);
     padding: 20px;
 }
-
+.faq_notification_wrapper{
+    width: 350px;
+}
+.faq_notification_hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.faq_h2_notification{
+    font-size: 16px;
+}
+.faq_notification_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 2rem;
+}
+.faq__icon_wrapper{
+    width: 60px;
+    height: 60px;
+    background-color: #FFF5D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq__icon{
+    color: #EB7100;
+}
+.faq__hero_wrapper{
+    margin: 0;
+    padding: 0;
+}
+.faq__hero_h2{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.faq__hero_p{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.faq__hero_sm{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #bbbbbb;
+}
 /* ---------------------------------------------------
                     form-section
 -------------------------------------------------------*/
@@ -172,11 +228,17 @@ h1,h2,h3,h4,h5{
                        nav-section
 --------------------------------------------------------*/
 .FAQ_wrapper{
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .left_side{
     display: flex;
     align-items: center;
+}
+.links{
+    margin-top: 1rem;
+    padding: 1rem 0;
 }
 .links .faq_dasboard{
     list-style: none;
@@ -211,6 +273,12 @@ h1,h2,h3,h4,h5{
 }
 .menubar{
     display: none;
+}
+
+.faq_main_container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
 }
 
 /* -----------------------------------------------------
@@ -282,8 +350,6 @@ h1,h2,h3,h4,h5{
 /* ----------------------------------------------------------------
                     Dashboard-apply-for-Loan-section
 -------------------------------------------------------------------*/
-
-
 
 .staff_text_h3{
     font-size: var(--font-size-big);
@@ -430,6 +496,7 @@ h1,h2,h3,h4,h5{
     gap: 20px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.8rem;
 }
 .faq_account_icon{
     margin-top: -0.5rem;
@@ -460,6 +527,48 @@ h1,h2,h3,h4,h5{
     display: flex;
     gap: 20px;
 }
+
+/* ----------------------------------------------------------------
+                        approval_form
+------------------------------------------------------------------- */
+.approval_form{
+   width: 100%;
+   margin: auto;
+}
+.form_control{
+    width: 250px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+.form_input_rule{
+    gap: 30px;
+}
+@media screen and (max-width:900px) {
+    .form_input_rule{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .form_control{
+        width: 100%;
+        padding: 10px 15px;
+        outline: none;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+    }
+    .approval_form{
+        width: 300px;
+        margin: auto;
+     }
+}
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------
                         media-responsive for index
@@ -567,6 +676,11 @@ h1,h2,h3,h4,h5{
 .check_icons{
     width: 100%;
 }
+.mobile_links_dropdown{
+    display: flex;
+    align-items: center;
+}
+
     
 }
 @media screen and (max-width:700px) {

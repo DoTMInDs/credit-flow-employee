@@ -22,7 +22,7 @@
 </head>
 <body>
     <!---------------- Nav-section ----------------->
-    <nav class="">
+    <nav class="border-b border-slate-500">
         <div class="container py-[20px]">
             <div class="flex justify-between items-center">
                 <div class="left_side flex gap-[60px] items-center">
@@ -71,10 +71,54 @@
                                     <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
                                 </ul>
                             </li>
+                            <li class="links_li"><a href="" class="a_links">Approver</a></li>
+                            <li class="links_li">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="a_links">Administrator</a>
+                                </button>
+                                <ul class="dropdown-menu px-[15px]">
+                                    <li class="flex  items-center">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <a class="dropdown-item" href="loan_calculator.html">Rules Engine</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="faq.html">Configure SLA</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="faq.html">Manage FAQs</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="right_side flex items-center gap-[20px]">
+                    <div class="">
+                        <div class="dropdown dropdown-center">
+                            <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <div class="flex gap-[10rem] justify-between p-[20px] whitespace-nowrap">
+                                    <h2 class="notification font-[Inter]">Notification</h2>
+                                    <a href="" class="text-blue-500 font-medium text-[12px]">View All</a>
+                              </div>
+                              <li><hr class="dropdown-divider"></li>
+                              <div class="flex items-center gap-[20px] p-[20px]">
+                                    <div class="bg-[#FFF5D9]  rounded-[50%] p-[1.5rem]">
+                                        <i class="fa-regular fa-credit-card icon text-[#FFBB38] fa-lg"></i>
+                                    </div>
+                                    <div class="">
+                                        <h2 class="font-bold text-[14px]">Approval needed</h2>
+                                        <p class="text-[#CBD5E1] pt-[5px] text-[12px]">Loan Application lorem...</p>
+                                        <small class="text-[#CBD5E1] text-[10px]">28 January 2021</small>
+                                    </div>
+                              </div>
+                            </ul>
+                          </div>
+                    </div>
                     <div class="accounts">
                         <h2 class="accounts_h2">Julliet Ibrahim: #FBHO18372</h2>
                     </div>
@@ -113,6 +157,26 @@
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
                                             <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Approver</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Administrator</a>
+                                        </button>
+                                        <ul class="dropdown-menu px-[15px]">
+                                            <li class="flex  items-center">
+                                                <i class="fa-solid fa-gear"></i>
+                                                <a class="dropdown-item" href="loan_calculator.html">Rules Engine</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="faq.html">Configure SLA</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="faq.html">Manage FAQs</a>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
